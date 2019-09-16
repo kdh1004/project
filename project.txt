@@ -1,0 +1,25 @@
+void setup() {
+  Serial.begin(9600);
+}
+int a;
+void loop(){
+  Serial.println(++a);
+  if(a>255) a=0;
+  delay(100);
+}
+--------------------------------------
+import processing.serial.*;
+Serial p;
+void setup(){
+  size(300,300);
+  p=new Serial(this,"COM4",9600);
+}
+void draw(){
+  if(p.available()>0){
+    String m=p.readString();
+    int a =int(m.trim());
+    println(a);
+    ellipse(150,150,a,a);
+    fill(0,255,0);
+  }
+}

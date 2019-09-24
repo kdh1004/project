@@ -1,0 +1,100 @@
+1. c언어의 특징과 장점을 적으시오.
+실행속도가 빠르고, 함수 기반 언어로 프로그램의 구조화가 쉽다. 하드웨어 제어가 쉽고 포인터로 메모리에 직접 접근이 가능하다.
+높은 호환성으로 이식성이 뛰어나다. 다양한 라이브러리가 제공된다.
+2. c언어의 활용에 대해 적으시오.
+운영체제 개발, 응용 프로그램 개발, 모바일 애플리케이션 개발, GUI(Graphic User Interface), OA(사무자동화)
+3. 두 실수를 메모리에 초기화시켜서 더하고 화면에 출력하시오.
+#include<stdio.h>
+void main(){
+float a=2,b=1,c;
+c=a+b;
+printf("%f",c);
+}
+4. 두 실수를 키보드로 받고 더해서 화면에 출력하시오.
+#include<stdio.h>
+void main(){
+float x,y;
+float sum;
+printf("첫 번째 숫자 입력:");
+scanf_s("%f",&x);
+printf("두 번째 숫자 입력:");
+scanf_s("%f",&y);
+sum=x+y;
+printf("두 수의 합은:%f",sum);
+}
+5. 두 실수를 메모리에 저장하고 함수 add()를 활용하여 더한 결과를 리턴 받아 화면에 출력하시오.
+#include<stdio.h>
+float add(float a, float b){
+return a+b;
+}
+void main(){
+float ia=3,ib=4,ic;
+ic=add(ia,ib);
+printf("%f",ic);
+}
+6. my.txt에 33과 22가 들어 있다. 이를 읽고 더하고 결과를 출력하시오.
+#include<stdio.h>
+#include<stdlib.h>
+int add(int a,int b){
+return a+b;
+}
+int main(){
+int a,b;
+FILE *fp=fopen("my.txt","r");
+fscanf(fp,%d%d,&a,&b);
+fclose(fp);
+printf("%d\n",add(a,b));
+}
+7. 3개의 과일을 {"Banana","Orange","Kiwi"}로 초기화 하고 화면에 출력하시오.
+#include<stdio.h>
+int main(){
+char t[3][7]={{"Banana"},{"Orange"},{"Kiwi"}};
+printf("%s\n %s\n %s\n",t[0],t[1],t[2]);
+}
+8. 곱셈용 명량창 계산기를 구현하시오. 매개변수가 2개 이하면 프로그램이 종료 된다.
+#include<stdio.h>
+#include<stdlib.h>
+int main(int n,char* v[]){
+int a,b,c;
+if(n<4){
+printf("매개변수가 모자라요.\n");
+exit(0);
+}
+a=atoi(v[1]);
+b=atoi(v[3]);
+switch(v[2][0]){
+case '*': c=a*b; break;
+default: break;
+}
+printf("%d\n",c);
+}
+9. 두 명의 {이름,나이,이메일]을 구조체 배열에 초기화하고 화면에 출력하시오.
+#include<stdio.h>
+struct user{
+char a[40];
+int b;
+char c[60];
+} we[2]={{"jcs",16,"jcs@gmail.com"},{"him",18,"him@naver.com"}};
+int main(){
+struct user *p;
+p=we;
+printf("%s %d %s\n",p->a,p->b,p->c);
+p++;
+printf("%s %d %s\n",p->a,p->b,p->c);
+}
+10. 두 명의 {이름과 나이 그리고 이메일}을 구조체 배열에 초기화하고, 함수 pr()에 포인터 전달하고 화면에 출력하시오.
+#include<stdio.h>
+struct User{
+char a[40];
+int b;
+char c[60];
+};
+void pr(struct User *we){
+printf("%s %d %s\n",we->a,we->b,we->c);
+we++;
+printf("%s %d %s\n",we->a,we->b,we->c);
+}
+void main(){
+struct User we[2]={{"phm",18,"phm@daum.net"},{"ksm",19,"ksm@hanmail.net"}};
+pr(we);
+}

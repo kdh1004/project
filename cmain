@@ -48,7 +48,55 @@ C:\anu>test
 --------------------------------------------------------------------------------------------
 test.c code
 
+#include<stdio.h>
+int add(int a,int b);
+int sub(int a,int b);
+int mul(int a,int b);
+float div(float a,float b);
+int mod(int a,int b);
+int quo(int a,int b);
+int main(){
+int a,b;
+a=1;
+b=2;
+printf("%d\n%d\n%d\n%f\n%d\n%d\n",add(a,b),sub(a,b),mul(a,b),div(a,b),mod(a,b),quo(a,b));
+}
 
+add.c code
+
+int add(int a, int b){
+return(a+b);
+}
+
+sub.c code
+
+int sub(int a, int b){
+return(a-b);
+}
+
+mul.c code
+
+int mul(int a, int b){
+return(a*b);
+}
+
+div.c code
+
+float div(float a, float b){
+return(a/b);
+}
+
+mod.c code
+
+int mod(int a, int b){
+return(a%b);
+}
+
+quo.c code
+
+int quo(int a, int b){
+return(a/b);
+}
 --------------------------------------------------------------------------------------------
 과제를 하면서, 주위에 있는 동기들에게 왜 되지 않는지 질문하였습니다. 멍청하게도, 제가 모든 곳에 int add()꼴을 써서 그렇습니다.
 그래서 int add()부분을 각각의 부분에 맞게(int mul(),float div()등등) 수정하니, 제대로 실행이 되는 것을 보았습니다.

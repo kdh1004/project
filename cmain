@@ -1,0 +1,47 @@
+C:\Users\user\source\repos\Project2>cd \
+
+C:\>cd anu
+
+C:\anu>notepad main.c
+
+C:\anu>notepad add.c
+
+C:\anu>notepad div.c
+
+C:\anu>notepad mod.c
+
+C:\anu>notepad mul.c
+
+C:\anu>notepad quo.c
+
+C:\anu>notepad sub.c
+
+C:\anu>cl/c *.c
+x86용 Microsoft (R) C/C++ 최적화 컴파일러 버전 19.22.27905
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+add.c
+div.c
+main.c
+mod.c
+mul.c
+quo.c
+sub.c
+코드를 생성하고 있습니다...
+
+C:\anu>lib /OUT:my.lib add.obj sub.obj mul.obj div.obj mod.obj quo.obj
+Microsoft (R) Library Manager Version 14.22.27905.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+C:\anu>link main my.lib
+Microsoft (R) Incremental Linker Version 14.22.27905.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+C:\anu>main
+3
+-1
+2
+0.500000
+1
+1

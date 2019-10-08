@@ -2,7 +2,7 @@ C:\Users\user\source\repos\Project2>cd \
 
 C:\>cd anu
 
-C:\anu>notepad main.c
+C:\anu>notepad test.c
 
 C:\anu>notepad add.c
 
@@ -22,7 +22,7 @@ Copyright (c) Microsoft Corporation. All rights reserved.
 
 add.c
 div.c
-main.c
+test.c
 mod.c
 mul.c
 quo.c
@@ -33,12 +33,12 @@ C:\anu>lib /OUT:my.lib add.obj sub.obj mul.obj div.obj mod.obj quo.obj
 Microsoft (R) Library Manager Version 14.22.27905.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
-C:\anu>link main my.lib
+C:\anu>link textg my.lib
 Microsoft (R) Incremental Linker Version 14.22.27905.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 
-C:\anu>main
+C:\anu>test
 3
 -1
 2

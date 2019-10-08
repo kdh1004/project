@@ -33,7 +33,7 @@ C:\anu>lib /OUT:my.lib add.obj sub.obj mul.obj div.obj mod.obj quo.obj
 Microsoft (R) Library Manager Version 14.22.27905.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
-C:\anu>link text my.lib
+C:\anu>link test my.lib
 Microsoft (R) Incremental Linker Version 14.22.27905.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
@@ -46,7 +46,9 @@ C:\anu>test
 1
 1
 --------------------------------------------------------------------------------------------
-text
+test.c code
+
+
 --------------------------------------------------------------------------------------------
 과제를 하면서, 주위에 있는 동기들에게 왜 되지 않는지 질문하였습니다. 멍청하게도, 제가 모든 곳에 int add()꼴을 써서 그렇습니다.
 그래서 int add()부분을 각각의 부분에 맞게(int mul(),float div()등등) 수정하니, 제대로 실행이 되는 것을 보았습니다.

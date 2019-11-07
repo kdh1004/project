@@ -2,8 +2,7 @@
 report
 
 1. 
-![51d09366e673a3505fbf38561d7bef031d4643d3c7efb50f8102e1dec1ed798041a0360c4a8c97b463aa2b220e8ceffe9312c567e338ccdef41743222f5028e32f57b14dbb460c9461ec141de0edb2be6364bdef5318306803c81833c9be5094](https://user-images.githubusercontent.com/50905795/68379844-0214ec00-0192-11ea-8dd1-eecc87731af0.png)
-
+![image](https://user-images.githubusercontent.com/50905795/68380123-954e2180-0192-11ea-983d-dbca26367f3b.png)
 리스트란 추상적 자료형, 자료구조의 하나이다. 순서를 가지고 일렬로 나열한 값들의 모임으로 정의된다. 
 갈림길이 없이 일렬로 나열되어있어 처음과 끝이 명확하다는 점에서 그래프와 구별된다.
 리스트의 각 원소에 순서대로 번호를 붙일 수도 있으며 이 번호를 사용해서 임의의 원소를 찾을 수 있는 연산을 추가할 수 있다. 그런 점에서 배열을 리스트의 일종으로 보기도 한다.
